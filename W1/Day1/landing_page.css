@@ -1,0 +1,11 @@
+.image {
+	background: url(https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
+ 	background-size: cover;
+ 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+
+.text {
+	font-size: x-large;
+}
