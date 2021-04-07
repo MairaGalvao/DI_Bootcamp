@@ -1,0 +1,45 @@
+.parent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.subparent {
+	display: flex;
+}
+.column {
+	display: grid;
+	grid-template-areas: "block" 
+	"block"
+	"block"
+	"bock"
+	;
+	grid-template-columns: 60px;
+	grid-template-rows: repeat(4, 60px); 
+	grid-gap: 5px;
+
+/*	background: lightblue;
+*/
+}
+
+.row {
+	display: grid;
+	grid-template-areas: "block block block block";
+	grid-template-columns: repeat(4, 60px);
+	grid-template-rows: 60px; 
+	grid-gap: 50px;
+
+
+	/*background: red;*/
+	align-content: center;
+}
+
+
+.right {
+	/*background: green;*/
+}
+
+.block {
+	background-color: yellow; 
+	grid-area: "block";
+
+}

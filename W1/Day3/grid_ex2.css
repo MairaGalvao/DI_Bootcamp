@@ -1,0 +1,57 @@
+body {
+	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr; 
+	grid-template-areas: 
+						"header header header"	 
+						"hero main_Content main_Content"
+						"side_Bar main_Content main_Content"
+						"side_Bar extra_Content extra_Content"
+						"related_images related_images related_Posts"
+						"footer footer footer"	
+
+}
+
+
+.header {
+	grid-area: header;
+	background-color: red;
+	grid
+}
+
+.hero {
+	grid-area: hero;
+	background-color: lightblue;
+}
+
+.main_Content {
+	grid-area: main_Content;
+	background-color: yellow;
+}
+
+.side_Bar {
+	grid-area: side_Bar;
+	background-color: gray;
+}
+
+.extra_Content {
+	grid-area: extra_Content;
+	background-color: lightpink;
+}
+
+.related_Images {
+	grid-area: related_Images;
+	background-color: purple;
+}
+
+.related_Posts {
+	grid-area: related_Posts;
+	background-color: lightblue;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: orange;
+}
+
