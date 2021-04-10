@@ -164,4 +164,12 @@
       width: 85px;
       height: 85px;
       box-sizing: content-box;
+        animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 }
