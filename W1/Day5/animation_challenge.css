@@ -1,0 +1,167 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background: #003d60;
+}
+
+.square:hover {
+    width: 200px;
+    height: 200px;
+    background: #60dd8e;
+    border-radius: 50%;
+    transition:all 0.9s ease;
+    opacity:0.5;
+}
+
+.pacman {
+	position: absolute;
+	top: 0%;
+	left: 25%;
+	width: 50px;
+    height: 50px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.pacman:hover{
+	opacity:0.5;
+	width: 0px;
+    height: 0px;
+    transition:all 0.9s ease;
+}
+
+.egg {
+	position: absolute;
+    display: block;
+    width: 126px;
+    height: 180px;
+    background-color: #cedd81;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    box-sizing: content-box;
+    top: 0%;
+    left: 40%;
+}
+
+.egg:hover {
+    opacity:0.5;
+    transition:all 0.3s ease;
+}
+
+.oval{
+	position: absolute;
+	top:0%;
+	right: 15%;
+	height: 50px;
+    width: 100px;
+    background-color: #3f9f7f;
+    border-radius: 50%;
+}
+
+.oval:hover{
+	background-color: #b06d81;
+    width: 150px;
+    height: 75px;
+    border-radius: 0 100% 0 0;
+    transition:all 0.3s ease;
+}
+
+.moon{
+	width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccb73d;
+}
+
+.moon:hover{
+	opacity:0.5;
+	background-color: #858f01;
+	border-radius: 100%;
+	transition:all 0.3s ease;
+}
+
+.spider{
+	position: absolute;
+	width: 100px;
+    height: 100px;
+    background: #009081;
+    border-radius: 50%
+    top:20%;
+    left: 25%;
+}
+
+.spider:hover{	 
+	box-shadow: 0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+    background: #1e2706;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 50px 0 70px 65px;
+    transition:all 0.9s ease;
+}
+
+.cone{
+	position: absolute;
+	width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: #eae2ab;
+    top: 60%;
+    right: 35%;
+
+}
+
+.cone:hover{
+	opacity: 0.5;
+	background-color: #858f
+}
+
+.mixed_circle{
+	position: absolute;
+	width: 96px;
+	box-sizing: content-box;
+	height: 48px;
+	background: #ffe489;
+	border-color: #17577e;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	top: 30%;
+	right: 15%;
+	}
+
+.mixed_circle:hover{
+	  content: "";
+      position: absolute;
+      background: #506801;
+      border: 18px solid red;
+      border-radius: 100%;
+      width: 85px;
+      height: 85px;
+      box-sizing: content-box;
+}

@@ -130,7 +130,7 @@ body {
 
 .container {
   max-width: 720px;
-  margin: 24px auto 48px auto;
+  margin: 680px auto 48px auto;
 }
 
 h1 {
@@ -430,3 +430,9 @@ svg {
     stroke-dasharray: 0 87.5%;
   }
 }
+
+
+.container_text {
+   position: inherit;
+    
+    }
