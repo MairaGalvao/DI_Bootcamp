@@ -10,7 +10,7 @@
     background: #60dd8e;
     border-radius: 50%;
     transition:all 0.9s ease;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
 .pacman {
@@ -49,13 +49,13 @@
 }
 
 .egg:hover {
-    opacity:0.5;
-    transition:all 0.3s ease;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
 .oval{
 	position: absolute;
-	top:0%;
+	top: 0%;
 	right: 15%;
 	height: 50px;
     width: 100px;
@@ -79,7 +79,7 @@
 }
 
 .moon:hover{
-	opacity:0.5;
+	opacity: 0.5;
 	background-color: #858f01;
 	border-radius: 100%;
 	transition:all 0.3s ease;
