@@ -26,5 +26,5 @@ console.log(fruits);
 // EXERCISE 2
 
 let moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-console.log(moreFruits)
+console.log(moreFruits[1][1])
 
