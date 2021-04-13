@@ -1,64 +1,63 @@
-// // Exercise 1 - Simple If/Else Statement
+// Exercise 1 - Simple If/Else Statement
 
 let x = 56239
 let y = 23648
 
 if (x > y){
-	console.log("x is the biggest number")
+	console.log("x is the bigger number")
 }
  
 // Exercise 2 - Chihuahua
 
-let newDog = "Chihuahua"
-console.log(newDog.length)
+// let newDog = "Chihuahua"
+// console.log(newDog.length)
 
-console.log(newDog.toUpperCase())
-console.log(newDog.toLowerCase())
+// console.log(newDog.toUpperCase())
+// console.log(newDog.toLowerCase())
 
-if(newDog == "Chihuahua"){
-	 console.log("I love Chihuahuas, it’s my favorite dog breed")
-}
+// if(newDog == "Chihuahua"){
+// 	 console.log("I love Chihuahuas, it’s my favorite dog breed")
+// }
 
-else{
-	console.log("I dont care, I prefer cats")
-}
+// else{
+// 	console.log("I dont care, I prefer cats")
+// }
 
 
 // Exercise 3 - Even Or Odd
 
-let usersNumber = prompt("Type a number between 0 to 10")
-if (usersNumber % 2 === 0){
-	console.log( usersNumber + " is an even number")
-}
+// let usersNumber = prompt("Type a number between 0 to 10")
+// if (usersNumber % 2 === 0){
+// 	console.log( usersNumber + " is an even number")
+// }
 
-if (usersNumber % 2 !== 0){
-	console.log( usersNumber + "  x is an odd number")
-}
+// if (usersNumber % 2 !== 0){
+// 	console.log( usersNumber + "  x is an odd number")
+// }
 
 // Exercise 4 - Switch Case
 
-let whatHappens;
-let direction;
+// let whatHappens;
+// let direction;
 
-switch (direction) {
-    case "forward":
-        break;
-        whatHappens = "you encounter a monster";
-    case "back":
-        whatHappens = "you arrived home";
-        break;
-        break;
-    case "right":
-        whatHappens = "you found a river";
-        break;
-    case "left":
-        break;
-        whatHappens = "you run into a troll";
-        break;
-    default:
-        whatHappens = "please enter a valid direction";
-}
-
+// switch (direction) {
+//     case "forward":
+//         break;
+//         whatHappens = "you encounter a monster";
+//     case "back":
+//         whatHappens = "you arrived home";
+//         break;
+//         break;
+//     case "right":
+//         whatHappens = "you found a river";
+//         break;
+//     case "left":
+//         break;
+//         whatHappens = "you run into a troll";
+//         break;
+//     default:
+//         whatHappens = "please enter a valid direction";
+// }
 
 // Answers
 
@@ -79,24 +78,19 @@ switch (direction) {
 
 // Exercise 5 - Group Chat
 
+// let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
 
-let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"]
-
-if (users.length == 0)  {
-	console.log("no one is online")
-}
-if (users.length == 1)  {
-	console.log(users[0] + " is online”")
-}
-if (users.length == 2)  {
-	console.log(users[0] + users[1] + " are online")
-}
-if (users.length > 2)  {
-	console.log(users[0] + users[1] + " are online")
-	numberUsersNow = users.length -2
-	console.log("There are " + numberUsersNow + " extra users")	
-
-
-
-
-
+// if (users.length == 0)  {
+// 	console.log("no one is online")
+// }
+// if (users.length == 1)  {
+// 	console.log(users[0] + " is online”")
+// }
+// if (users.length == 2)  {
+// 	console.log(users[0] + users[1] + " are online")
+// }
+// if (users.length > 2)  {
+// 	console.log(users[0] + users[1] + " are online")
+// 	numberUsersNow = users.length -2
+// 	console.log("There are " + numberUsersNow + " extra users")	
+// }
