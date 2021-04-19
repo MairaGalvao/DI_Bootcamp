@@ -1,6 +1,7 @@
 function bottlesBeer (){
-    usersNumber = parseFloat(prompt("Type a number to begin counting down the bottles"))
-    reducer = 1
+    let usersNumber = parseFloat(prompt("Type a number to begin counting down the bottles")) 
+    let reducer = 1 
+    
     
     while (usersNumber >= 1) {
                 
@@ -17,8 +18,8 @@ function bottlesBeer (){
             console.log(`${usersNumber} bottles of beer`);
             console.log(`Take ${reducer} down, pass them around`);
         }    
-        usersNumber = usersNumber - reducer 
-        reducer = reducer + 1;           
+        usersNumber -= reducer;
+        reducer ++;  
     }
 }
 
