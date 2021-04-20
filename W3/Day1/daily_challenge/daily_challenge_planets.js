@@ -12,7 +12,6 @@ let gettingSection = document.getElementsByClassName("listPlanets");
         createDiv.classList.add(planetsSolarSystem[i])
         createDiv.appendChild(divText);
         gettingSection[0].appendChild(createDiv);
-        
     }
 }
 
