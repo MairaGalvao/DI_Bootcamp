@@ -1,0 +1,5 @@
+#grayBox {
+    display:grid;
+    grid-template-columns:30px; 
+    grid-template-rows:30px; 
+}
