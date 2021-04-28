@@ -13,7 +13,7 @@
 //     console.log(reduce([1, 2]));
 
 
-let account = [{dolars:2}, {dolars:5}, {dolars:10},{dolars:100}];
+// let account = [{dolars:2}, {dolars:5}, {dolars:10},{dolars:100}];
 // let b = account.reduce( (a, b) => {
 //     return {dolars: a.dolars + b.dolars}; // returns object with property x
 //   })
