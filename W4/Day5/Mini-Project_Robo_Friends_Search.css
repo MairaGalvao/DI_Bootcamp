@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    background: url('https://files.slack.com/files-pri/T7P4CAKAS-F020B4M1TJ9/image.png'), repeat fixed;
+    font-family: 'Rubik', calibri, sans-serif;
+    font-size: medium;
+}
+
+.containerRobots{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 2rem;
+    gap: 8rem;
+    font-size: xx-large;
+    
+    
+}
+.num1, .num3, .num5, .num7, .num9{ 
+    background-color: #9e93b4c7;
+    border-radius: 10%;
+}
+
+.num2, .num4, .num6, .num8, .num10{ 
+    background-color: #ce74b3c7;
+    border-radius: 10%;
+    
+}
