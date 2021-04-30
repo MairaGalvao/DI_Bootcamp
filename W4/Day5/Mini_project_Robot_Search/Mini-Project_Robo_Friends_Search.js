@@ -88,40 +88,41 @@
         }
         ];
 
+const createCard = (item) => {
+	let card = document.createElement('DIV')   
+	let cardName = document.createElement('H6')
+	let imgRobot = document.createElement('IMG')
+	let pImg = document.createElement('P')
+	imgRobot.appendChild(pImg)
+	cardName.innerText = item.name  + '  ' + item.email
+	imgRobot.classList.add('num' + item.id)
+	card.classList.add(item.username)
+	card.appendChild(imgRobot)
+	imgRobot.setAttribute('src', item.image)
+	card.appendChild(cardName)
+	return card;
+}
 
-
-    for(let i = 0; i < robots.length; i++){
-        let card = document.createElement('DIV')   
-        let cardName = document.createElement('H6')
-        let imgRobot = document.createElement('IMG')
-        let pImg = document.createElement('P')
-        imgRobot.appendChild(pImg)
-        cardName.innerText = robots[i].name  + '  ' + robots[i].email
-        
-        imgRobot.classList.add('num' + robots[i].id)
-        
-        card.classList.add(robots[i].username)
-        card.appendChild(imgRobot)
-        imgRobot.setAttribute('src', robots[i].image)
-        gridDiv.appendChild(card)
-        card.appendChild(cardName)
-    }    
-
+const createAllCards = (arr) => {
+	gridDiv.innerHTML = '';
+	arr.forEach(item => {
+		let card = createCard(item);
+	    gridDiv.appendChild(card);
+	})
+}
 const searchBox = () => {
-    let myInput = document.getElementsByTagName('input')[0].value
-    console.log(myInput)
-    let filteredRobots = robots.filter(item => {
-        if (item.name.includes(myInput)){
-            console.log(item)
-            return item 
-        }
+	
+	let myInput = document.getElementsByTagName('input')[0].value
+    const filteredRobots = robots.filter((item) => {
+      return item.name.toLowerCase().includes(myInput.toLowerCase())
     })
-    console.log(filteredRobots)
-}//
-    addEventListener('keyup', searchBox)
-    //2 addeventlistener - 1 click - 1 keyup
-    //
-    //whenever the key is pressed, i got send the input 
+    createAllCards(filteredRobots)
+}
+
+createAllCards(robots);
+
+addEventListener('keyup', searchBox)
+
 
 
 
