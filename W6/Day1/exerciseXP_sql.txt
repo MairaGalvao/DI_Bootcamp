@@ -1,0 +1,54 @@
+Creating a table for customers:
+CREATE TABLE my_customers (
+    full_name VARCHAR (255) 
+) 
+
+
+Creating a table for items:
+CREATE TABLE my_items (
+    furniture VARCHAR (255) NOT NULL,
+    price NUMERIC (10) NOT NULL
+); 
+
+
+Adding columns and rows to customers:
+INSERT INTO my_customers (full_name)
+VALUES
+    ('Greg Jones'),
+    ('Sandra Jones'),
+	('Scott Scott'),
+	('Trevor Green'),
+	('Melanie Johnson');
+
+
+Adding columns and rows to items:
+INSERT INTO my_items (price,furniture)
+VALUES
+    (100, 'small desk'),
+    (300, 'large desk'),
+	(80, 'fan');
+
+Selecting all items from both tables:
+SELECT * FROM my_items;
+SELECT * FROM my_customers;
+
+All the items with a price above 80 (80 not included):
+SELECT * FROM my_items WHERE price > 80;
+
+All the items with a price below 300. (300 included):
+SELECT * FROM my_items WHERE price <= 300;
+
+
+All customers whose last name is ‘Smith’ (What will be your outcome?). OUTCOME = NOTHING
+SELECT * FROM my_customers 
+WHERE full_name LIKE 'Smith'
+
+All customers whose last name is ‘Jones’:
+SELECT * FROM my_customers 
+WHERE full_name LIKE '%Jones'
+
+All customers whose firstname is not ‘Scott’:
+SELECT * FROM my_customers 
+WHERE NOT full_name LIKE ('Scott%')
+
+
