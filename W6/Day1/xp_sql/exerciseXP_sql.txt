@@ -1,54 +1,11 @@
-Creating a table for customers:
-CREATE TABLE my_customers (
-    full_name VARCHAR (255) 
-) 
+Count how many actors are in the table:
+SELECT COUNT(actor_id)
+FROM actor
 
 
-Creating a table for items:
-CREATE TABLE my_items (
-    furniture VARCHAR (255) NOT NULL,
-    price NUMERIC (10) NOT NULL
-); 
+INSERT INTO actor (first_name)
+VALUES ('Maíra');
 
-
-Adding columns and rows to customers:
-INSERT INTO my_customers (full_name)
-VALUES
-    ('Greg Jones'),
-    ('Sandra Jones'),
-	('Scott Scott'),
-	('Trevor Green'),
-	('Melanie Johnson');
-
-
-Adding columns and rows to items:
-INSERT INTO my_items (price,furniture)
-VALUES
-    (100, 'small desk'),
-    (300, 'large desk'),
-	(80, 'fan');
-
-Selecting all items from both tables:
-SELECT * FROM my_items;
-SELECT * FROM my_customers;
-
-All the items with a price above 80 (80 not included):
-SELECT * FROM my_items WHERE price > 80;
-
-All the items with a price below 300. (300 included):
-SELECT * FROM my_items WHERE price <= 300;
-
-
-All customers whose last name is ‘Smith’ (What will be your outcome?). OUTCOME = NOTHING
-SELECT * FROM my_customers 
-WHERE full_name LIKE 'Smith'
-
-All customers whose last name is ‘Jones’:
-SELECT * FROM my_customers 
-WHERE full_name LIKE '%Jones'
-
-All customers whose firstname is not ‘Scott’:
-SELECT * FROM my_customers 
-WHERE NOT full_name LIKE ('Scott%')
-
-
+ERROR:  null value in column "last_name" of relation "actor" violates not-null constraint
+DETAIL:  Failing row contains (201, Maíra, null, 2021-05-09 17:11:27.911133).
+SQL state: 23502
