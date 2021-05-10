@@ -18,10 +18,18 @@ order by last_name DESC
 
 Create a table named purchases. It should have 2 columns : customer_id and item_id
 CREATE TABLE purchases (
-    customer_id  serial PRIMARY KEY,
-    item_id NUMERIC (10) NOT NULL,
-	FOREIGN KEY ('customer_id') REFERENCES ('my_items', 'my_customers')
+customer_id  serial PRIMARY KEY,
+item_id NUMERIC (10) NOT NULL,
+FOREIGN KEY ('customer_id') REFERENCES ('my_items', 'my_customers')
 ); 
 
- 
+
+
+Create a table named purchases. It should have 2 columns : customer_id and item_id. 
+These columns are references from the tables customers and items. Edit the data of the purchases table:
+CREATE TABLE my_purchases(
+customer_id INTEGER,
+item_id INTEGER,
+FOREIGN KEY (customer_id) REFERENCES my_customers (id),
+FOREIGN KEY (item_id) REFERENCES my_items (id) );
 
