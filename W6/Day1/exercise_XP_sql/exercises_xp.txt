@@ -1,0 +1,27 @@
+All items, ordered by price (lowest to highest).
+SELECT * FROM my_items
+ORDER BY price;
+
+Items with a price above 80 (80 included), ordered by price (highest to lowest):
+SELECT * FROM my_items
+WHERE price >= 80
+ORDER BY price DESC;
+
+The first 3 customers in alphabetical order (A-Z) – exclude ‘id’ from the results:
+SELECT full_name FROM my_customers
+ORDER BY full_name DESC;
+
+All last names (no other columns!), in reverse alphabetical order (Z-A)
+select last_name from my_customers
+order by last_name DESC
+
+
+Create a table named purchases. It should have 2 columns : customer_id and item_id
+CREATE TABLE purchases (
+    customer_id  serial PRIMARY KEY,
+    item_id NUMERIC (10) NOT NULL,
+	FOREIGN KEY ('customer_id') REFERENCES ('my_items', 'my_customers')
+); 
+
+ 
+
