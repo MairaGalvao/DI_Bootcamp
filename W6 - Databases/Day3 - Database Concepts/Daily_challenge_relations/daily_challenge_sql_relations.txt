@@ -1,0 +1,65 @@
+Create 4 different tables, each one with a different relationship.
+Join them with all the types of PostgreSQL Joins you’ve learned.
+
+CREATE TABLE CostIsrael (
+	RentalHouse int,
+	BasicBills int,
+	Transport int,
+	City varchar(255)
+);
+INSERT INTO CostIsrael(RentalHouse,BasicBills,City, transport)
+VALUES (6000, 1000, 'Tel Aviv', 400);
+
+
+CREATE TABLE PaymentsIsrael (
+	SoftwareJobs int,
+	HardwareJobs int,
+	SalesMarketing int,
+	StudentsGraduates int,
+	City varchar(255)
+);
+INSERT INTO PaymentsIsrael (SoftwareJobs, HardwareJobs,SalesMarketing,StudentsGraduates,City)
+VALUES (25000, 20000,14000, 7000,'Tel Aviv' );
+
+
+CREATE TABLE CostBrazil (
+	RentalHouse int,
+	BasicBills int,
+	Transport int,
+	City varchar(255)
+);
+INSERT INTO CostBrazil (RentalHouse,BasicBills,Transport,City)
+VALUES (3000, 500,200,'Sao Paulo' );
+
+
+CREATE TABLE PaymentsBrazil (
+	SoftwareJobs int,
+	HardwareJobs int,
+	SalesMarketing int,
+	StudentsGraduates int,
+	City varchar(255)
+);
+INSERT INTO PaymentsBrazil  (SoftwareJobs, HardwareJobs,SalesMarketing,StudentsGraduates,City)
+VALUES (10000, 9000,5000,3000,'Sao Paulo' );
+
+
+
+INNER JOIN
+SELECT PaymentsIsrael.SoftwareJobs, CostIsrael.RentalHouse 
+FROM CostIsrael
+INNER JOIN CostIsrael ON CostIsrael.City = PaymentsIsrael.City
+
+LEFT JOIN 
+SELECT CostBrazil.BasicBills , PaymentsBrazil.SalesMarketing 
+FROM CostBrazil
+LEFT JOIN PaymentsBrazil
+ON CostBrazil.City = PaymentsBrazil.City
+
+RIGHT JOIN
+SELECT *  
+FROM PaymentsBrazil 
+RIGHT JOIN PaymentsIsrael 
+ON PaymentsBrazil.City = PaymentsIsrael.City;
+
+
+
