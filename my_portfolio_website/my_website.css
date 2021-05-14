@@ -1,0 +1,58 @@
+html{
+  -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    background-color: transparent;
+  }
+.project1{
+  background-color:lightpink
+  
+  
+}
+.flashGeekPic {
+  border-radius: 8px;
+  max-width: 40%;
+  height: auto;
+}
+
+/* , ::after, ::before {
+  box-sizing: border-box; */
+  
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  cursor: pointer;
+  background-color: #ddd;
+  color: black;
+}
+
+img {
+  width: max-content;
+  height: max-content
+}  
+
+.textIntro{
+  float: right;
+  display: block;
+  
+}
+

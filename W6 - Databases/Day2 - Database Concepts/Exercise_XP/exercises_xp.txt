@@ -33,3 +33,7 @@ item_id INTEGER,
 FOREIGN KEY (customer_id) REFERENCES my_customers (id),
 FOREIGN KEY (item_id) REFERENCES my_items (id) );
 
+
+
+
+
