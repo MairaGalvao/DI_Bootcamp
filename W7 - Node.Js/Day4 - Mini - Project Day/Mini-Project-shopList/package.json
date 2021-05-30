@@ -1,0 +1,21 @@
+{
+  "name": "mini-project-shoplist",
+  "version": "1.0.0",
+  "description": "Node js - Shopping List Mini Project",
+  "main": "mini_project_shop_list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon mini_project_shop_list.js"
+  },
+  "author": "Maira Galvao",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.7"
+  }
+}
