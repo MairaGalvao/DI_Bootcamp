@@ -1,15 +1,18 @@
 {
-  "name": "my-app",
+  "name": "my-first-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "prop-types": "^15.7.2",
+    "bootstrap": "^4.6.0",
+    "braces": "^3.0.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-card-component": "^0.0.1-beta.5.9.0",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

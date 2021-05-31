@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Ex8_xp />
+      <Ex1_xp />
     </>
   );
 }
@@ -27,9 +27,10 @@ function Ex2_xp() {
 }
 
 function Ex3_xp() {
+  const word = <h1> JSX </h1>;
   return (
     <>
-      <h1>I do not use JSX!</h1>
+      <h1>I do not use {word}!</h1>
     </>
   );
 }
@@ -43,8 +44,7 @@ function Ex4_xp() {
 function Ex5_xp() {
   const fruits = (
     <div>
-      {" "}
-      <li>banana</li> <li>apple</li> <li>kiwi</li>{" "}
+      <li>banana</li> <li>apple</li> <li>kiwi</li>
     </div>
   );
   const list = <ul> {fruits} </ul>;
@@ -55,13 +55,12 @@ function Ex5_xp() {
 function Ex6_xp() {
   const header1 = (
     <header>
-      {" "}
-      <h1>I am a header</h1>{" "}
+      <h1>I am a header</h1>
     </header>
   );
   const header2 = (
     <header>
-      <h1> I am a header too </h1>{" "}
+      <h1> I am a header too </h1>
     </header>
   );
 
@@ -84,12 +83,11 @@ function Ex8_xp() {
   const age = 12;
   const phrase = (
     <h1>
-      {" "}
-      {name} is {age} years old{" "}
+      {name} is {age} years old
     </h1>
   );
 
-  return <>{phrase}</>;
+  return <>phrase</>;
 }
 
 export default App;
